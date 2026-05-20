@@ -1,0 +1,80 @@
+SCIP version 10.0.2 [precision: 8 byte] [memory: block] [mode: optimized] [LP solver: SoPlex 8.0.2] [GitHash: b8eaf989f9]
+Copyright (c) 2002-2026 Zuse Institute Berlin (ZIB)
+
+External libraries: 
+  SoPlex 8.0.2         Linear programming solver developed at Zuse Institute Berlin (soplex.zib.de) [GitHash: cfadddc4]
+  CppAD 20180000.0     Algorithmic Differentiation of C++ algorithms developed by B. Bell (github.com/coin-or/CppAD)
+  ZLIB 1.3.1           General purpose compression library by J. Gailly and M. Adler (zlib.net)
+  MPFR 4.2.2           GNU Multiple Precision Floating-Point Reliable Library (mpfr.org)
+  Boost 1.89.0         Boost C++ Libraries (boost.org)
+  TinyCThread 1.2      small portable implementation of the C11 threads API (tinycthread.github.io)
+  GMP 6.3.0            GNU Multiple Precision Arithmetic Library developed by T. Granlund (gmplib.org)
+  ZIMPL 3.7.1          Zuse Institute Mathematical Programming Language developed by T. Koch (zimpl.zib.de)
+  AMPL/MP 4.0.4        AMPL .nl file reader library (github.com/ampl/mp)
+  PaPILO 3.0.0         parallel presolve for integer and linear optimization (github.com/scipopt/papilo) (built with TBB) [GitHash: 4cbdc327]
+  Nauty 2.8.8          Computing Graph Automorphism Groups by Brendan D. McKay (users.cecs.anu.edu.au/~bdm/nauty)
+  sassy 2.1            Symmetry preprocessor by Markus Anders (github.com/markusa4/sassy)
+  Ipopt 3.14.19        Interior Point Optimizer developed by A. Waechter et.al. (github.com/coin-or/Ipopt)
+
+user parameter file <scip.set> not found - using default parameters
+
+
+read problem <case10.lp>
+============
+
+original problem has 14 variables (0 bin, 0 int, 14 cont) and 15 constraints
+
+presolving:
+(round 1, fast)       0 del vars, 0 del conss, 0 add conss, 4 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs, 0 implints
+   (0.0s) symmetry computation started: requiring (bin +, int +, cont +), (fixed: bin -, int -, cont -)
+   (0.0s) no symmetry present (symcode time: 0.00)
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 0 deleted vars, 0 deleted constraints, 0 added constraints, 4 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques, 0 implied integral variables (0 bin, 0 int, 0 cont)
+presolved problem has 14 variables (0 bin, 0 int, 14 cont) and 15 constraints
+     10 constraints of type <linear>
+      5 constraints of type <nonlinear>
+Presolving Time: 0.00
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+  0.0s|     1 |     0 |     3 |     - |  1551k |   0 |  27 |  15 |  22 |   0 |  0 |   0 |   0 | 2.000000e+00 |      --      |    Inf | unknown
+  0.0s|     1 |     0 |    12 |     - |  1606k |   0 |  27 |  15 |  25 |   3 |  1 |   0 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  0.0s|     1 |     0 |    15 |     - |  1606k |   0 |  27 |  15 |  27 |   5 |  2 |   0 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  0.0s|     1 |     0 |    17 |     - |  1610k |   0 |  27 |  15 |  29 |   7 |  3 |   0 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  0.0s|     1 |     0 |   181 |     - |  1611k |   0 |  27 |  15 |  29 |   7 |  4 |   0 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  0.0s|     1 |     0 |   182 |     - |  1611k |   0 |  27 |  15 |  30 |   8 |  5 |   0 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+  0.0s|     1 |     0 |   183 |     - |  1611k |   0 |  27 |  15 |  31 |   9 |  6 |   0 |   0 | 1.000000e+00 |      --      |    Inf | unknown
+L 0.0s|     1 |     0 |   183 |     - |  subnlp|   0 |  27 |  15 |  31 |   9 |  7 |   0 |   0 | 1.000000e+00 | 5.567396e-01 |  79.62%| unknown
+  0.0s|     1 |     0 |   183 |     - |  1612k |   0 |  27 |  15 |  31 |   9 |  7 |   0 |   0 | 1.000000e+00 | 5.567396e-01 |  79.62%| unknown
+  0.0s|     1 |     2 |   183 |     - |  1613k |   0 |  27 |  15 |  31 |   9 |  8 |   0 |   0 | 1.000000e+00 | 5.567396e-01 |  79.62%| unknown
+L 0.0s|     2 |     3 |   186 | 152.0 |  subnlp|   1 |  27 |  15 |  27 |  12 |  2 |   0 |   0 | 1.000000e+00 | 5.567396e-01 |  79.62%| unknown
+  0.0s|   100 |    37 |   740 |   7.1 |  1778k |   9 |  27 |  15 |  46 | 345 |  2 |   0 |   0 | 8.911974e-01 | 5.567396e-01 |  60.07%|  37.58%
+  0.0s|   200 |    55 |  1244 |   6.1 |  1970k |  11 |  27 |  15 |  39 | 653 |  3 |   4 |   0 | 7.003031e-01 | 5.567396e-01 |  25.79%|  62.18%
+  0.0s|   300 |    41 |  1636 |   5.4 |  2012k |  12 |  27 |  15 |  51 | 918 |  3 |   4 |   0 | 5.948292e-01 | 5.567396e-01 |   6.84%|  87.82%
+  0.0s|   400 |    21 |  1873 |   4.6 |  2087k |  16 |  27 |  15 |  57 |1080 |  1 |   4 |   0 | 5.629513e-01 | 5.567396e-01 |   1.12%|  99.26%
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+* 0.0s|   432 |     5 |  1939 |   4.4 |    LP  |  19 |  27 |  15 |  67 |1125 |  2 |   4 |   0 | 5.584460e-01 | 5.567407e-01 |   0.31%|  99.74%
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 0.00
+Solving Nodes      : 437
+Primal Bound       : +5.56740694697136e-01 (4 solutions)
+Dual Bound         : +5.56740694697136e-01
+Gap                : 0.00 %
+
+
+objective value:                    0.556740694697136
+n2                                  0.334223187332718 	(obj:1)
+n13                                 0.334222223643624 	(obj:1)
+quadobjvar                         -0.111704716279206 	(obj:1)
+w3                                            0.25075 	(obj:0)
+w2                                            0.25075 	(obj:0)
+w1                                            0.24975 	(obj:0)
+a1                                            0.24975 	(obj:0)
+b1                                            0.75025 	(obj:0)
+a2                                            0.24975 	(obj:0)
+c1                                            0.75025 	(obj:0)
+n1                                                  1 	(obj:0)
+n3                                  0.334222223643624 	(obj:0)
+
+
