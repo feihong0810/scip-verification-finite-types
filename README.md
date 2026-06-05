@@ -369,9 +369,9 @@ maximize 1 - (1-n1)*n23.
 
 ---
 
-## Case classification for Claim 3
+## Case classification
 
-Claim 3 concerns the case
+We concern the case
 
 ```text
 |T(H,g)| <= 6.
@@ -410,11 +410,6 @@ T
 
 is the generated shifted edge-type set.
 
-```text
-Missing types
-```
-
-means the complement of `T` inside the eight possible types.
 
 The eight possible types are
 
