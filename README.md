@@ -377,8 +377,8 @@ We concern the case
 |T(H,g)| <= 6.
 ```
 
-In our problem, the first class `V1` plays a different role from `V2` and `V3`,
-while `V2` and `V3` are symmetric. Therefore, we identify two cases only if they
+In our problem, assume `g(V1)` is the largest among the three. `V2` and `V3` are symmetric. 
+Therefore, we identify two cases only if they
 can be obtained from each other by swapping the second and third coordinates.
 
 So we classify shifted edge-type sets up to the symmetry
