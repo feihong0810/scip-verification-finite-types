@@ -47,10 +47,10 @@ subto constraint10:
     w3 == n3*c1 + (1-n3)*c2;
 
 subto constraint11:
-    w1+0.001 >= w2;
+    w1 >= w2;
 
 subto constraint12:
-    w1+0.001 >= w3;
+    w1 >= w3;
 
 subto constraint13:
     a1 + b1 + c2 >= 1;
