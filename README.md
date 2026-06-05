@@ -1,6 +1,6 @@
 # SCIP verification for finite shifted edge-type cases
 
-This repository contains the ZIMPL/SCIP verification used in Claim 3 of the paper.
+This repository contains the ZIMPL/SCIP verification used in Lemma2.8 of the paper.
 
 The goal is to verify a finite family of optimization problems arising from
 shifted 3-partite 3-graphs in the two-value case of a fractional vertex cover.
